@@ -1,0 +1,150 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin:0;
+}
+
+.grass, .sky {
+    position: relative;
+}
+.sky{
+    height: 40%;
+    background: rgb(137, 194, 216);
+}
+
+.grass{
+    height: 60%;
+    background:rgb(33, 190, 33);
+}
+
+.first{
+width: 200px;
+height: 250px;
+margin-top: -30px;
+}
+
+.second{
+    width: 100px;
+    height: 300px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    
+
+}
+.third{
+
+        width: 100px;
+        height: 200px;
+        margin-left: 250px;
+        margin-bottom: 18px;
+    
+}
+.fourth{
+
+    width: 100px;
+    height: 350px;
+    margin-left: 400px;
+    margin-bottom: 15px;
+
+}
+.first
+    {
+        
+        animation-name: run;
+        animation-duration: 15s;
+        animation-fill-mode: both;
+        animation-delay: 2s;
+        animation-iteration-count:infinite;
+        animation-timing-function: cubic-bezier(1, 0.04, 0.98, 0.70);
+    }
+    @keyframes run{
+        from{ transform: translateX(-200px)}
+        to{ transform: translateX(1400px)}
+    }
+
+    .second{
+       
+        animation-name: run1;
+        animation-duration: 10s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-direction:forward;
+        animation-delay: 8s;
+    }
+    @keyframes run1{
+        from{ transform: translateX(-200px)}
+        to{ transform: translateX(250px)}
+    }
+
+
+    .third{
+       
+        animation-name: run2;
+        animation-duration: 7s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-direction:forward;
+        animation-delay: 13s;
+    }
+    @keyframes run2{
+        from{ transform: translateX(0px)}
+        to{ transform: translateX(300px)}
+    }
+    .fourth{
+       
+        animation-name: run3;
+        animation-duration: 9s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-direction:forward;
+        animation-delay: 14s;
+    }
+    @keyframes run3{
+        from{ transform: translateX(100px)}
+        to{ transform: translateX(200px)}
+    }
+
+
+
+     
+    .cloud{
+        position: absolute;
+        width: 100px;
+        top:110px;
+        opacity: 1;
+        animation: wind 80s linear infinite reverse;
+    }
+    .cloud1{
+        position: absolute;
+        width: 100px;
+        margin-left: 400px;
+        top:110px;
+        opacity: 0.5;
+        animation: wind 80s linear infinite reverse;
+    }
+    .cloud2{
+        position: absolute;
+        width: 100px;
+        margin-left: 800px;
+        top:110px;
+        opacity:1;
+        animation: wind 80s linear infinite reverse;
+    }
+    .cloud3{
+        position: absolute;
+        width: 100px;
+        margin-left: 1200px;
+        top:110px;
+        opacity:0.5;
+        animation: wind 80s linear infinite reverse;
+    }
+    @keyframes wind{
+        from{ left:-300px}
+        to{left: 100%;}
+    }
+.tree{
+    width: 200px;
+    height: 400px;
+    margin-left:10px;
+}
